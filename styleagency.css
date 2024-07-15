@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    max-width: 100vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    padding: 10px 10%;
+    top: 0;
+}
+
+/* NavBar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    font-size: 1rem;
+    color: grey;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+main {
+    margin-top: 81px;
+}
+
+/* Image de la petite fille*/
+#caroussel {
+    position: relative;
+    margin-bottom: 100px;
+
+}
+
+.cover img {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+
+/* Titre qui se positionne SUR l'image */
+.slogan {
+    width: 35%;
+    position: absolute;
+    z-index: 10;
+    top: 30%;
+    left: 15%;
+    font-size: 14px;
+    color: white;
+}
+
+.slogan h1 {
+    font-size: 38px;
+}
+
+#Webagency {
+    color: rgb(110, 197, 255);
+}
+
+.slogan a {
+    background-color: rgb(110, 197, 255);
+    border-radius: 5%;
+    padding: 1%;
+}
+
+.chevron_gauche {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    top: calc(50% - 30px);
+    height: 60px;
+    left: 10px;
+    color: white;
+}
+
+.chevron_droite {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    top: calc(50% - 30px);
+    height: 60px;
+    right: 10px;
+    color: white;
+}
+
+
+/* Nos Services */
+
+#Services {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#img_services {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+}
+
+.presentation {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titre {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.barre {
+    color: lightgrey;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.fa-circle {
+    color: #5CADD3;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.barre_services {
+    width: 50px;
+    border-top: 2px solid #7e7e7ebb;
+}
+
+/* Image ordinateur */
+#illustration_services {
+    display: flex;
+    padding-top: 30px;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+
+.icone_test {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: solid 1px lightgrey;
+    border-radius: 50%;
+}
+
+.logo {
+    position: relative;
+    font-size: 20px;
+    color: #5CADD3;
+}
+
+.point_services {
+    border-radius: 50%;
+    transform: translateY('-50%');
+    padding: 3px;
+    background-color: white;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.h2 {
+    font-size: 1.17em;
+    margin-block-start: -1em;
+}
+
+.descriptif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_txt {
+    position: relative;
+    top: -50px;
+    margin-left: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+.petitrond {
+    position: absolute;
+    border: solid 3px white;
+    background-color: #5CADD3;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    left: calc(50% - 31px);
+}
+
+.axe {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transform-origin: center;
+    animation: axe 5s linear infinite;
+}
+
+@keyframes axe {
+    0% {
+        rotate: 0deg
+    }
+
+    100% {
+        rotate: 360deg
+    }
+}
+
+/* Section "Nos Projets" */
+
+#Nosprojets {
+    background-color: rgba(211, 211, 211, 0.479);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Nosprojets .presentation {
+    margin-bottom: 10px;
+}
+
+.Tousportfolio {
+
+    color: grey;
+    background-color: rgba(128, 128, 128, 0.534);
+    padding: 10px 20px 5px 20px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    transition: 0.2s
+}
+
+.Tousportfolio a:hover {
+
+    background-color: #5CADD3;
+}
+
+
+.img_nosprojets {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+figure {
+    width: 100%;
+    margin-block-end: 1em;
+    margin-inline-end: 40px;
+    position: relative;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8 {
+    width: 300px;
+}
+
+figure img:hover~figcaption {
+    opacity: 1;
+}
+
+figcaption {
+    opacity: 0;
+    position: absolute;
+    bottom: 3px;
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+    width: 300px;
+    padding: 10px;
+}
+
+/*Contact*/
+
+#contact {
+
+
+    width: 100%;
+    height: 650px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.maps {
+    background-color: rgb(52, 123, 216);
+    position: relative;
+}
+
+iframe {
+    height: 40rem;
+    width: 100%;
+    opacity: 0.6;
+
+
+}
+
+.form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    border-bottom: 0;
+    text-align: center;
+
+    z-index: 1;
+    top: 10%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.692);
+    padding: 10px 20px;
+    width: 300px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #5CADD3;
+    color: white;
+}
